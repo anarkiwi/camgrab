@@ -1,4 +1,4 @@
-FROM python:3.11-slim AS test
+FROM python:3.14-slim AS test
 WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir -e ".[dev]"
