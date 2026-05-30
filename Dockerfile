@@ -7,7 +7,7 @@ RUN ruff check .
 RUN mypy camgrab/
 RUN pytest tests/ -v
 
-FROM ubuntu:24.04 AS final
+FROM ubuntu:26.04 AS final
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     imagemagick \
