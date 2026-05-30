@@ -11,6 +11,7 @@ FROM ubuntu:24.04 AS final
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     imagemagick \
+    openssh-client \
     rsync \
     python3 \
     python3-pip \
